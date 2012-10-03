@@ -19,10 +19,10 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
   include( dirname( __FILE__ ) . '/local-config.php' );
   define( 'WP_LOCAL_DEV', true ); // We'll talk about this later
 } else {
-  define( 'DB_NAME',     'production_db'       );
-  define( 'DB_USER',     'production_user'     );
-  define( 'DB_PASSWORD', 'production_password' );
-  define( 'DB_HOST',     'production_db_host'  );
+  define( 'DB_NAME',     'wordcamp_detroit'       );
+  define( 'DB_USER',     'root'     );
+  define( 'DB_PASSWORD', 'ollie1' );
+  define( 'DB_HOST',     'localhost'  );
 }
 
 /** Database Charset to use in creating database tables. */
