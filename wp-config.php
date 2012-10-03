@@ -14,9 +14,9 @@
  * @package WordPress
  */
 
-
-if ( file_exists( dirname( __FILE__ ) . './local-config.php' ) ) {
-  include( dirname( __FILE__ ) . './local-config.php' );
+// Loads up a local config file if one is available.
+if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+  include( dirname( __FILE__ ) . '/local-config.php' );
   define( 'WP_LOCAL_DEV', true ); // We'll talk about this later
 } else {
   define( 'DB_NAME',     'production_db'       );
